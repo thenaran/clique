@@ -1,0 +1,52 @@
+[application]
+# application name
+name=hello
+# application display name (localization supported)
+display=hello
+display_ko=
+# application version
+version=1.0.0
+# minimum sdk version
+sdk-version=0.17.0
+# application author
+author=Naran Inc.
+# application description
+description=Hello sample app
+description_ko=
+# application's URL (provider, service, whatever)
+url=http://thenaran.com
+# service main file. Leave it blank if it's a library application.
+# supports shell executables at the moment.
+entry=main.sh
+# required applications
+requires=
+# words representing the app (max 10 items)
+labels=unix shell remote-shell, ...
+# device resources to use
+devices=usbdrive display speaker microphone wifi gpio:1:out gpio:2:in gpio:3:in:falling gpio:4:in:rising
+# application supports view type
+view=display web:8888
+# demanded port forwarding. split text is ' '
+forwarding=80->8888
+# the range of priority is -20(the highest) to 20(the lowest)
+priority=-20
+# supports language
+language=english
+# supports country
+country=KOR
+
+
+# Environmental variables
+[environments]
+PYTHONPATH=:/data/external
+DEBUG=1
+
+
+[section1]
+key=100000
+key2=604800
+
+
+[section2]
+key=true
+anything=anything is fine.

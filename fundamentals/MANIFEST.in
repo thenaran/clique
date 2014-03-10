@@ -1,0 +1,9 @@
+include README.mkd LICENSE.mkd setup.py
+recursive-include adt *.py
+recursive-include adt/llist *.py *.h *.c
+recursive-include clique *.py
+recursive-include rpclib *.py
+recursive-include rpclib/msgpack *.py *.h *.c
+recursive-include rpclib/tornado *.py
+recursive-include rpclib/tornado/platform *.py
+

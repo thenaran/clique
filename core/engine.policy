@@ -1,0 +1,71 @@
+{
+"privileged":
+    {
+    "description": "list up all privileged APIs to use for each privileged application.",
+    "value":
+        {
+        "shell":
+            {
+            "value":
+                [
+                "engine.node.activate_free_mode",
+                "engine.node.request_handshake",
+                "engine.node.upgrade",
+                "engine.app.execute",
+                "engine.app.terminate",
+                "engine.app.install",
+                "engine.app.uninstall",
+                "engine.app.upgrade",
+                "engine.app.get_app_settings",
+                "engine.app.set_app_settings"
+                ]
+            },
+        "cide":
+            {
+            "value":
+                [
+                "engine.app.install",
+                "engine.app.uninstall",
+                "engine.app.execute",
+                "engine.app.terminate"
+                "engine.app.refresh_info"
+                ]
+            },
+        "backup":
+            {
+            "value":
+                [
+                "engine.backup.backup",
+                "engine.backup.restore"
+                ]
+            }
+        }
+    },
+"reserved":
+    {
+    "value":
+        {
+        "namespaces":
+            {
+            "description": "reserved namespaces",
+            "value":
+                [
+                "app",
+                "config",
+                "discover",
+                "node",
+                "status",
+                "test",
+                "backup"
+                ]
+            },
+        "immortals":
+            {
+            "value":
+                [
+                "shell"
+                ]
+            }
+        }
+    }
+}

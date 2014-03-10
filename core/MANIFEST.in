@@ -1,0 +1,3 @@
+include README.mkd LICENSE setup.py
+recursive-include engine *.py
+

@@ -1,0 +1,6 @@
+[application]
+installs: 1
+runs: 1
+expiration: 20130301
+certificat:
+license:

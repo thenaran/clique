@@ -1,0 +1,90 @@
+{
+"application":
+    {
+    "value":
+        {
+        "name":
+            {
+            "description": "application name",
+            "value": "hello"
+            },
+        "display":
+            {
+            "description": "application display name (localization supported)",
+            "value": "hello",
+            "i18n": [["ko", "hello"]]
+            },
+        "version":
+            {
+            "description": "application version",
+            "value": "1.0.0"
+            },
+        "sdk-version":
+            {
+            "description": "minimum sdk version",
+            "value": "0.19.0"
+            },
+        "description":
+            {
+            "description": "application description",
+            "value": "Hello sample app",
+            "i18n": [["ko", "Hello sample sapp"]]
+            },
+        "url":
+            {
+            "description": "application's URL (provider, service, whatever)",
+            "value": "http://thenaran.com"
+            },
+        "entry":
+            {
+            "description": "service main file. Leave it blank if it's a library application. supports shell executables at the moment.",
+            "value": "main.sh"
+            },
+        "requires":
+            {
+            "description": "required applications",
+            "value": []
+            },
+        "lebels":
+            {
+            "description": "words representing the app (max 10 items)",
+            "value": ["unix", "shell", "remote-shell", "..."]
+            },
+        "devices":
+            {
+            "description": "device resources to use",
+            "value": ["storage", "display", "speaker", "microphone", "wifi", "gpio:1:out", "gpio:2:in", "gpio:3:in:falling", "gpio:4:in:rising"]
+            },
+        "view":
+            {
+            "description": "application supports view type",
+            "value": ["web:8080", "display"]
+            },
+        "forwarding":
+            {
+            "description": "demanded port forwarding. split text is ' '",
+            "value": ["80->8888"]
+            },
+        "priority":
+            {
+            "description": "the range of priority is -20(the highest) to 20(the lowest)",
+            "value": "-20"
+            },
+        "language":
+            {
+            "description": "supports language",
+            "value": "english"
+            },
+        "country":
+            {
+            "description": "supports country",
+            "value": "KOR"
+            }
+        }
+   },
+"environments":
+   {
+   "description": "Environmental variables",
+   "value": [["PYTHONPATH", ":/data/external"],["DEBUG", "1"]]
+   }
+}
